@@ -1,0 +1,31 @@
+@import '../../color.scss';
+.acPage {
+  .banner {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    @media (max-width: $pad-media) {
+      height: 300px;
+    }
+    @media (max-width: $phone-media) {
+      height: 200px;
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #444;
+  }
+
+  .recommend figure {
+    height: 250px;
+  }
+
+  .recommend figure div {
+    height: 200px;
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

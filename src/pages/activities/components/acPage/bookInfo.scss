@@ -1,0 +1,91 @@
+@import '../../color.scss';
+
+.book_box {
+  max-width: 13rem;
+  figure {
+    transition: 0.3s;
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .book_pic {
+    position: relative;
+    overflow: hidden;
+    &:after {
+      padding-top: 100%;
+      display: block;
+      content: '';
+    }
+    img {
+      transition: .3s;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .book_data {
+    h6 {
+      font-weight: 600;
+      text-align: center;
+      color: #444;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+      height: 2.5rem;
+    }
+    span.info {
+      text-align: center;
+      display: block;
+      small {
+        display: block;
+      }
+    }
+  }
+  .info {
+    .author {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    }
+  }
+  .intro {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    height: 50px;
+  }
+  a {
+    color: $color-gray;
+    .fixedPrice {
+      display: block;
+    }
+    .price {
+      color: $color-red;
+    }
+  }
+  .addCart {
+    background-color: $color-green;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 1rem;
+    &:focus,
+    &:hover {
+      text-shadow: 1px 1px 2px $color-green;
+      outline: none;
+      border: 1px solid $color-green;
+      background: lighten($color-green, 5px);
+      outline: none;
+      box-shadow: inset 0px 0px 5px $color-green;
+    }
+  }
+}

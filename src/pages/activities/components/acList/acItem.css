@@ -1,0 +1,39 @@
+.acItem figure {
+  overflow: hidden;
+}
+
+.acItem figure a {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.acItem figure img {
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center center;
+     object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.acItem figure:hover img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.acItem a h4 {
+  color: #2D3A3A;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.acItem a h4:hover {
+  font-weight: bold;
+  color: #FFC408;
+  text-shadow: 1px 1px 1px #2D3A3A;
+}
+/*# sourceMappingURL=acItem.css.map */

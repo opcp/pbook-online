@@ -1,0 +1,47 @@
+.acPage .banner {
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .acPage .banner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .acPage .banner {
+    height: 200px;
+  }
+}
+
+.acPage h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #444;
+}
+
+.acPage .booksRowInfo {
+  display: block;
+}
+
+.acPage .recommend {
+  border-top: 1px solid #ccc;
+}
+
+.acPage .recommend figure {
+  height: 250px;
+}
+
+.acPage .recommend figure div {
+  height: 200px;
+  background-origin: content-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.acPage section.books {
+  border-top: 1px solid #ccc;
+}
+/*# sourceMappingURL=acPageDiscount.css.map */

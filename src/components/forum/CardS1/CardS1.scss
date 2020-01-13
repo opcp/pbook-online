@@ -1,0 +1,53 @@
+.forumPage {
+  .cards-frame {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 390px;
+
+    .card-figure {
+      box-sizing: border-box;
+      width: 360px;
+      height: 370px;
+      position: relative;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.02);
+      }
+      .card-s1-img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+      }
+      .card-body {
+        padding: 10px 16px 8px 16px;
+        height: 220px;
+      }
+      .card-title-font {
+        height: 33px;
+        margin: 12px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .card-s1-subTitle {
+        height: 72px;
+        margin-top: 4px;
+        width: 336px;
+        padding-right: 6px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      .user-details {
+        position: absolute;
+        bottom: 4px;
+      }
+    }
+  }
+}

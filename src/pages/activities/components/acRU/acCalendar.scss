@@ -1,0 +1,47 @@
+@import '../../color.scss';
+.acCalendarContainer {
+  .popover {
+    color: $color-black;
+    border: 1px solid darken($color-green, 5%);
+    max-width: 480px;
+    .popover-header {
+      background: $color-green;
+    }
+  }
+  .fc-header-toolbar {
+    h2 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    }
+    .fc-right {
+      display: flex;
+    }
+    button {
+      outline: none;
+      background: darken($color-green, 20%);
+      border: none;
+      &:focus {
+        box-shadow: none;
+      }
+      &:active {
+        background-color: darken($color-green, 50%) !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .fc-event {
+    .fc-time {
+      display: none;
+    }
+    background-color: darken($color-green, 30%);
+    &:hover {
+      background-color: darken($color-green, 15%);
+    }
+  }
+  .alert-info {
+    background-color: lighten($color-green, 5%);
+  }
+}

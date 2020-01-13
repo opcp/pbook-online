@@ -1,0 +1,141 @@
+.inputControl .title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.dis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dis-flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dis-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container-m {
+  max-width: 900px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.inputControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputControl .title {
+  margin-right: 24px;
+}
+
+.inputControl .title:before {
+  content: '';
+  font-size: 1.3rem;
+  border: 3px solid #ffc408;
+  margin-right: 10px;
+  line-height: 40px;
+}
+
+.unsplashInput {
+  border: none;
+  margin-left: 8px;
+}
+
+.imgWindow {
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.imgWindow .blank2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 840px;
+          flex: 1 1 840px;
+}
+
+.imgWindow .blank {
+  width: 210px;
+}
+
+.imgWindow img {
+  cursor: pointer;
+  margin: 8px 4px;
+  width: 210px;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.imgWindow img:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  opacity: 0.7;
+}
+
+.MuiDialog-paperWidthSm {
+  max-width: 940px !important;
+}
+/*# sourceMappingURL=ResponsiveDialog.css.map */

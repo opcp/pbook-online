@@ -1,0 +1,64 @@
+.acTableContainer {
+  color: #2D3A3A;
+}
+
+.acTableContainer .nav-tabs a {
+  color: #6caa75;
+}
+
+.acTableContainer .popover {
+  width: 100%;
+  border: 1px solid #bdd9c1;
+  max-width: 480px;
+}
+
+.acTableContainer .popover .popover-header {
+  background: #CDE2D0;
+}
+
+.acTableContainer .acTitle {
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.acTableContainer .acTitle:hover {
+  color: #FFC408;
+  text-shadow: 1px 1px 1px #2D3A3A;
+  font-weight: 600;
+}
+
+.acTableContainer .acTitle::after {
+  display: block;
+  content: attr(title);
+  font-weight: 600;
+  text-shadow: 1px 1px 1px transparent;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.acTableContainer .icon {
+  color: #2D3A3A;
+  cursor: pointer;
+}
+
+.acTableContainer .icon:hover {
+  text-shadow: 1px 1px 1px #2D3A3A;
+  color: #FFC408;
+  background-color: #ddebdf;
+}
+
+.acTableContainer .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f7faf7;
+}
+
+.swal-button--acDYes {
+  background: #FF525B;
+}
+
+.swal-button.swal-button--acDYes:not([disabled]):hover {
+  background-color: #eb000c;
+}
+/*# sourceMappingURL=acRU.css.map */

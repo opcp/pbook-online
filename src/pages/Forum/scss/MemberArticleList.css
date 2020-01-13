@@ -1,0 +1,138 @@
+.articleListControle .articleList .page-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d3a3a;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.dis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dis-flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dis-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container-m {
+  max-width: 900px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.articleListControle {
+  background: url("../../../images/bg.png");
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+.articleListControle a {
+  color: #2d3a3a;
+}
+
+.articleListControle a:hover {
+  color: #ffc408;
+  font-weight: bold;
+}
+
+.articleListControle th {
+  font-size: 1.4rem;
+}
+
+.articleListControle td {
+  padding: 0 0;
+  font-size: 1.4rem;
+}
+
+.articleListControle .articleList {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.articleListControle .articleList .page-title {
+  font-size: 1.6rem;
+  margin: 16px 0;
+  display: inline-block;
+}
+
+.articleListControle .articleList .page-title::before {
+  content: '';
+  margin-right: 8px;
+  border: 3px solid #ffc408;
+}
+
+.articleListControle .list-title {
+  max-height: 70px;
+  max-width: 650px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.articleListControle .noPost {
+  font-size: 1.4rem;
+}
+
+.articleListControle .thumbIcon {
+  color: #ffc408;
+}
+
+.articleListControle .trachCanIcon {
+  color: #ff525b;
+}
+/*# sourceMappingURL=MemberArticleList.css.map */

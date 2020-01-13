@@ -1,0 +1,68 @@
+.forumPage .cards-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 390px;
+          flex: 0 1 390px;
+}
+
+.forumPage .cards-frame .card-figure {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 360px;
+  height: 370px;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.forumPage .cards-frame .card-figure:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.forumPage .cards-frame .card-figure .card-s1-img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.forumPage .cards-frame .card-figure .card-body {
+  padding: 10px 16px 8px 16px;
+  height: 220px;
+}
+
+.forumPage .cards-frame .card-figure .card-title-font {
+  height: 33px;
+  margin: 12px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.forumPage .cards-frame .card-figure .card-s1-subTitle {
+  height: 72px;
+  margin-top: 4px;
+  width: 336px;
+  padding-right: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.forumPage .cards-frame .card-figure .user-details {
+  position: absolute;
+  bottom: 4px;
+}
+/*# sourceMappingURL=CardS1.css.map */

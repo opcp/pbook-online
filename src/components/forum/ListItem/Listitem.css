@@ -1,0 +1,255 @@
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d3a3a;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.dis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dis-flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dis-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container-m {
+  max-width: 900px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.forumPage .forum-list-wrapper {
+  margin-top: 20px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item {
+  min-width: 370px;
+  height: 140px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left {
+  padding-right: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  color: #979d9d;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-category {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .fm-subtitle {
+  width: 570px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details {
+  color: #ff525b;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame {
+  background-color: #fff;
+  width: 300px;
+  position: absolute;
+  bottom: 100%;
+  left: -60px;
+  -webkit-box-shadow: 1px 3px #ccc;
+          box-shadow: 1px 3px #ccc;
+  border-radius: 5px;
+  color: #2d3a3a;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame button:focus {
+  outline: none;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame hr {
+  margin: 12px;
+  background-color: #cde2d0;
+  height: 1px;
+  border: none;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .title-line:after {
+  content: '';
+  display: block;
+  width: 100%;
+  border: 2px solid #ffc408;
+  border-radius: 5px 5px 0 0;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 8px 0 8px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .title .icon {
+  color: #ffc408;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .subtitle {
+  color: #58b2dc;
+  padding-left: 8px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .introduction {
+  padding: 0 8px 0 8px;
+  color: #979d9d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-details .userFrame .followText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8px 8px 8px;
+  font-size: 1.2rem;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-time {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-time .fa-star {
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-time .fa-star.active {
+  color: #ffc408;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-time .item-time-right {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-time .item-time-right .item-icon {
+  margin: 0 10px 0 10px;
+  font-size: 1rem;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-left .list-item-time .item-time-right .item-icon .likeOrNot {
+  background-color: #fff;
+  width: 200px;
+  position: absolute;
+  bottom: 120%;
+  left: -60px;
+  -webkit-box-shadow: 1px 3px #ccc;
+          box-shadow: 1px 3px #ccc;
+  border-radius: 5px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .item-right {
+  min-width: 150px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .img {
+  width: 150px;
+  height: 120px;
+}
+
+.forumPage .forum-list-wrapper .forum-list-item .loadinglist {
+  background-color: #dadada49;
+  color: #dadada28;
+}
+/*# sourceMappingURL=Listitem.css.map */

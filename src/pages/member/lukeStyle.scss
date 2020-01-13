@@ -1,0 +1,808 @@
+$main_color: #cde2e0;
+$black: #2d3a3a;
+$yellow: #ffc408;
+$grey: #979d9d;
+$white: #ffffff;
+$big_text: 32px;
+$title: 28px;
+$content: 24px;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contentWrap {
+  min-height: 80vw;
+  width: 1280px;
+}
+
+.MB_title {
+  margin: 20px;
+  font-size: 32px;
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  width: 1180px;
+  border-bottom: 3px solid $yellow;
+}
+.nobook{
+  width: 100%;
+  padding-left: 450px;
+  font-size: $big_text;
+  margin-top: 50px;
+}
+
+.err_border {
+  background-color: #eee;
+  border: 1px solid #ff525b;
+  padding: 12px 15px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.err_text {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  margin: -8px 0 5px 0;
+  padding: 0;
+  color: #ff525b;
+}
+
+//FBMessage
+.fbMessage{
+    width: 50px;
+    height: 50px;
+    // background: rgb(86, 75, 97);
+
+  .fbicon{
+    font-size: 60px;
+    color: $black ;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.6;
+    z-index: 10;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+    transform: translateX(-50%, -50%);
+    
+    &:hover{
+      color: $yellow;
+      font-size: 80px;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+      // transform: translateZ(0px);
+    }
+    100% {
+        transform: translateY(-15px);
+        // transform: translateZ(20px);
+    }
+  }
+}
+
+//查看訂單
+.queryOrder {
+  @extend .contentWrap;
+  // border: 1px solid rgb(109, 34, 34);
+  .nobook{
+    @extend .nobook;
+  }
+
+  .Book_title {
+    @extend .MB_title;
+  }
+  .order_title{
+    margin: 50px 0 0 80px;
+    font-size: $title;
+  }
+  th{
+    font-size: $content;
+  }
+  td{
+    font-size: 18px;
+  }
+
+}
+
+
+//查看二手書書籍
+.viewMemberBooks {
+  position: absolute;
+  right: 0;
+  left: 320px;
+  height: 100%;
+  padding: 31px;
+  // color: $yellow;
+  // box-shadow: inset 0 20px 6rem #2d3a3a, inset 0 20px 6rem #2d3a3a;
+  margin: 0;
+  transition: 0.5s;
+
+  &::before {
+    content: '';
+    display: block;
+    // background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .nobook{
+    @extend .nobook;
+  }
+
+  .Book_title {
+    @extend .MB_title;
+  }
+  .books_container{
+    display: flex;
+  }
+  .modal-content{
+    margin: 10px 15px;
+  }
+
+}
+
+//分頁按鈕
+.pageWrap {
+  width: 100%;
+  .pagination {
+    .page-item {
+      &.active {
+        .page-link {
+          background-color: $main_color;
+          border-color: $main_color;
+          color: $white;
+        }
+      }
+      .page-link {
+        color: $black;
+        &:focus {
+          z-index: 2;
+          box-shadow: 0 0 0 .5px $main_color;
+        }
+      }
+    }
+    .none {
+      .page-link {
+        background-color: $white !important;
+        border-color: #dee2e6 !important;
+        color: $black !important;
+      }
+    }
+  }
+}
+
+//收藏書評家
+.reviewerContent{
+  position: absolute;
+  // background: #f24;
+  right: 0;
+  left: 300px;
+  height: 100%;
+  padding: 31px;
+  color: $yellow;
+  box-shadow: inset 0 20px 6rem #2d3a3a, inset 0 20px 6rem #2d3a3a;
+  margin: 0;
+  transition: 0.5s;
+
+  &::before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .test1{
+    // background: #000;
+  }
+  .nobook{
+    @extend .nobook;
+  }
+  .title{
+    @extend .MB_title;
+    margin-bottom: 40px;
+  }
+  /* 書評家列表，整體區域 ( Display狀態改變) */
+  .ReviewerListAllBox{
+    display: flex;
+    }
+    @media (max-width: 786px) {
+        /* 書評家列表，整體區域 (狀態改變) */
+        .ReviewerListAllBox {
+            display: inline-block;
+        }
+        .brInfoText{
+            font-size: 1.2rem;
+            margin: 24px;
+            -webkit-line-clamp: 9;
+        }
+        /* 影片顯示，RWD (狀態改變) */
+        .brYouTubeRWD{
+            width: 100%;
+        }
+    }
+  /* 書評列表 (參照背景) */
+  .reviewerList {
+    /* background: #fff; */
+    /* background: url(../reviewer_page/images/01_書評家.png) center center; */
+    max-width: 1200px;
+    margin: 10px 0px 0 30px;
+    // padding-bottom: 30px;
+    background-size:cover;
+  }
+  /* 書評列表 (參照偽元素) */
+  .reviewerList::after{
+    /* content: ""; */
+    display: block;
+    background: rgba(0,0,0,.25);
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+  }
+  /* 左側簡介，整體區域 (縮放限制) */
+  .brAvatarAllBox{    
+    min-width: 120px;
+    max-width: 210px;
+  }
+  /* 邊框顏色，參照用 */
+  .borderLine {
+    border: 2px solid #ffffff;
+  }
+  /* 標題，主要文字 */
+  .h5_br{
+    text-align: center;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+  }
+  /* 頭像區域 (縮放限制) */
+  .brAvatarBox{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid #ffc408;
+    margin: 0 auto;
+    background-size: contain ;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  /* 頭像反饋 */
+  .brAvatarBox:hover{
+    border: 5px solid #ffc408;
+  }
+  /* 頭圖 (縮放比例、置中位置) */
+  .brAvatarImg{
+    height: 103%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  /* 職業介紹、追蹤作者、社群分享，共用區域 (按鈕圖片) */
+  .brIconBox{
+      min-height: 45px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* justify-content: space-around; */
+      position: relative;
+  }
+  /* 書評家 (type)、職業介紹 (文字) */
+  .AvatarInfo{
+    text-align: center;
+    font-size: 1rem;
+    /* color: rgba(255,255,255,.6); */
+    color: #ffffff;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  /* 超連結按鈕，hover (小小的動態效果) */
+  .brMark_img{
+    width: 30px;
+    left: 15px;
+    // background-color: #fffff;
+    transform: translate(-50%);
+    transition: 0.2s;
+  }
+  .brMark_img:hover{
+    width: 32px;
+    padding: 4px;
+    border:1px solid #ffc408;
+  }
+  /* 看看書櫃 (按鈕、超連結)*/
+  .brReadBooks{
+    min-width: 70px;
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .brReadBooks:hover{
+    color:#ffc408;
+    /* background-color: #cde2d0; */
+  }
+  /* 邊框顏色，上底線 */
+  .borderLineTop {
+    border-top:3px solid #ffffff;
+  }
+  /* 分享圖示 (書評家的 社群圖示) */
+  .brIconShare{
+    width: 23%;
+    margin: 5px 4px;
+  }
+  .fb-share-button{
+    width: 100%;
+  }
+  .fbBox{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #1877f2;
+    height: 25px;
+  }
+  /* 書評家簡介，(文字、限制行數) */
+  .brInfoText{
+    font-size: 1.2rem;
+    margin: 24px;
+    /* color: rgba(255,255,255,.7); */
+    color: #ffffff;
+    overflow : hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
+}
+
+//收藏書籍
+.booksContent {
+  position: absolute;
+  right: 0;
+  left: 300px;
+  height: 100%;
+  padding: 31px;
+  color: $yellow;
+  box-shadow: inset 0 20px 6rem #2d3a3a, inset 0 20px 6rem #2d3a3a;
+  margin: 0;
+  transition: 0.5s;
+
+  &::before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .nobook{
+    @extend .nobook;
+  }
+
+  .title {
+    margin: 20px;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    width: 1180px;
+    border-bottom: 3px solid $yellow;
+  }
+
+  .wrap {
+    // width: 100%;
+    height: 900px;
+    display: flex;
+  }
+  .list {
+    padding-bottom: 10px;
+    margin: 25px 30px 15px 30px;
+    transition: 0.5s;
+    min-width: 110px;
+    max-width: 200px;
+    height: 250px;
+  }
+
+  .listImg {
+    width: 100%;
+    top: 30%;
+    left: 0%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    transition: 0.5s;
+  }
+  .listImg:hover {
+    width: 105%;
+    box-shadow: 0px 0px 12px #cde2d0;
+  }
+  .booksTitle {
+    width: 100%;
+    position: absolute;
+    // background: chartreuse;
+    font-size: 20px;
+    color: #fff;
+    bottom: 0px;
+    left: 50%;
+    margin-top: 100px;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  .bookInfo {
+    padding: 5px 10px;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .introduction {
+    // border: 1px solid #000;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+//修改密碼
+.passwordContent {
+  @extend .contentWrap;
+  .title {
+    @extend .MB_title;
+  }
+
+  .tip {
+    // border: 1px solid #000;
+    height: 50px;
+    color: #979d9d;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .error {
+    /* display: block;
+    height: 20px;
+    font-size: 12px; */
+    background-color: #eee;
+    border: 1px solid #ff525b;
+    color: #ff525b;
+    padding: 12px 15px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .serial {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 50px;
+  }
+
+  .passwordGroup {
+    // border: 1px solid #000;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+
+    .item {
+      text-align: center;
+      font-size: $big_text;
+      padding: 20px;
+    }
+  }
+  button {
+    margin: 35px;
+  }
+}
+
+//新增會員書籍
+.addMemberBook {
+  .Book_title {
+    margin: 20px;
+    font-size: 32px;
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    width: 1400px;
+    border-bottom: 3px solid $yellow;
+  }
+  .button-group {
+    // border: 1px solid #000;
+    margin: 30px 0px 100px 300px;
+    justify-content: flex-start;
+    button {
+      // border: 1px solid red;
+      margin: 20px 100px;
+    }
+  }
+}
+
+//會員編輯的樣式
+.editWrap {
+  @extend .contentWrap;
+  // border: 1px solid rgb(109, 34, 34);
+
+  .MB_title {
+    // border: 1px solid #000;
+    @extend .MB_title;
+  }
+
+  .list {
+    // border: 1px solid #000;
+    width: 640px;
+    margin-top: 50px;
+    padding-left: 80px;
+
+    .form-group {
+      // border: 1px solid #000;
+
+      label {
+        // border: 1px solid #000;
+        padding: 20px;
+      }
+    }
+
+    .item {
+      /* background-color: silver; */
+      box-sizing: border-box;
+    }
+
+    h4 {
+      margin: 20px;
+      padding: 20px 10px;
+    }
+    input {
+      // border: 1px solid #000;
+      margin-top: 40px;
+      height: 30px;
+      width: 300px;
+    }
+  }
+  .list-r {
+    // border: 1px solid #000;
+    margin-top: 50px;
+
+    .itemTitle {
+      font-size: $big_text;
+      display: flex;
+      justify-content: center;
+      margin: 30px;
+    }
+
+    .item {
+      width: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      /* border: 1px solid #000; */
+
+      .chang_btn {
+        display: flex;
+        justify-content: center;
+      }
+
+      figure {
+        width: 300px;
+        height: 300px;
+        border-radius: 99em;
+        background-size: cover;
+        object-fit: cover;
+      }
+      .uploadImg{
+        width: 100%;
+        height: 300px;
+        border-radius: 99em;
+        background-size: cover;
+        object-fit: cover;
+      }
+    }
+
+    h3 {
+      display: block;
+      width: 200px;
+    }
+  }
+
+  .button-group {
+    // border: 1px solid #000;
+    margin: 80px;
+    justify-content: center;
+    button {
+      margin: 20px 100px;
+    }
+  }
+}
+
+//會員資訊的樣式
+.infoWrap {
+  @extend .contentWrap;
+  // border: 1px solid #000;
+  width: 1100px;
+  margin-left: 40px;
+  
+
+  .MB_title {
+    @extend .MB_title;
+  }
+  .myCard{
+    // background: url(../login/登入圖.png) center center no-repeat;
+    margin-left: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid #2d3a3a;
+    box-shadow: 3px 3px 8px #2d3a3a;
+
+  }
+
+  .list {
+    // border: 1px solid #000;
+    width: 540px;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    padding-left: 80px;
+
+    .item {
+      /* background-color: silver; */
+      box-sizing: border-box;
+    }
+
+    h4 {
+      margin: 20px;
+      padding: 20px 10px;
+    }
+  }
+  .list-r {
+    // border: 1px solid #000;
+    margin-top: 50px;
+    position: absolute;
+    right: 20px;
+    top: -57px;
+    width: 540px;
+
+    .item {
+      // height: 100px;
+      // border: 1px solid #000;
+      
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      /* border: 1px solid #000; */
+    }
+    img{
+      width: 65px;
+      position: absolute;
+      bottom: -75px;
+      right: 35px;
+    }
+
+    figure {
+      // border: 1px solid #000;
+      margin-left: -60px;
+      width: 300px;
+      height: 300px;
+      border-radius: 99em;
+      // background-repeat: no-repeat;
+      background-size: cover;
+      // object-fit: cover;
+    }
+    h3 {
+      display: block;
+      width: 200px;
+    }
+  }
+}
+
+//sidebar內樣式
+.side-menu {
+  width: 305px;
+  min-height: 85vw;;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-color: #cde2d0;
+  // background-color: #cde2d0;
+  // opacity: 0.9; 
+  display: flex;
+  flex-direction: column;
+  // box-shadow: 5px 5px 10px #2D3A3A;
+  text-decoration: none;
+
+  .sidebar {
+    padding-left: 60px;
+  }
+
+  .sidebar_title {
+    // border: 1px solid #000;
+    font-size: 28px;
+    color: $black;
+    text-decoration: none;
+
+    h2 {
+      font-size: 28px;
+      text-decoration: none !important;
+    }
+  }
+
+  .sidebar_item {
+    padding: 5px 50px;
+    font-size: 24px;
+
+    a {
+      font-size: 24px;
+      color: $black;
+    }
+    a:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}
+
+//navbar樣式
+.navbarWrap {
+  height: 80px;
+  background-color: $main_color;
+  // box-shadow: 0px 5px 5px rgba(194, 212, 171, 0.5);
+  font-size: 24px;
+
+  .breadcrumb {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    color: #2d3a3a;
+    padding-left: 250px;
+    background: $main_color;
+
+    li {
+      padding: 0 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2d3a3a;
+    }
+
+    a:hover,
+    li:last-child a {
+      color: $grey;
+    }
+
+    li + li {
+      padding-left: 0;
+    }
+
+    li + li::before {
+      content: '>';
+      color: #2d3a3a;
+      margin-right: 20px;
+    }
+  }
+}

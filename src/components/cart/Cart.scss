@@ -1,0 +1,249 @@
+@import 'color';
+.cart_wrap {
+  background-image: url('../../images/bg.png');
+  .top {
+    .rc-steps {
+      .rc-steps-item {
+        .rc-steps-item-icon {
+          background: $color-black;
+          border-color: $color-black;
+        }
+      }
+      .rc-steps-item-finish {
+        .rc-steps-item-title {
+          &:after {
+            background-color: $color-black;
+          }
+        }
+      }
+      .rc-steps-item-process {
+        .rc-steps-item-icon {
+          .rc-steps-icon {
+            color: $color-yellow;
+          }
+        }
+      }
+      .rc-steps-item-wait {
+        .rc-steps-item-icon {
+          .rc-steps-icon {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  .shopDetail {
+    width: 100%;
+    border: 1px solid rgba($color-gray, 0.3);
+    .tableTop {
+      width: 100%;
+      height: 4vw;
+      background-color: rgba($color-gray, 0.3);
+      .picName {
+        width: 18.5vw;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .bookAmount {
+        width: 2.5vw;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .bookPrice {
+        width: 8vw;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+    .eachDetail {
+      border-bottom: 1px solid rgba($color-gray, 0.3);
+      padding-bottom: 1rem;
+      .picture {
+        width: 6vw;
+        height: 6vw;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .bookName {
+        width: 10vw;
+        span {
+          color: $color-black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .bookAmount {
+        width: 2.5vw;
+      }
+      .bookPrice {
+        font-size: 1.3rem;
+        color: $color-black;
+      }
+      .delete {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $color-gray;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .cartSummary {
+    border: 1px solid rgba($color-gray, 0.3);
+    .orderSummary {
+      width: 100%;
+      height: 4vw;
+      background-color: rgba($color-gray, 0.3);
+      font-size: 2rem;
+    }
+    .color-red {
+      color: $color-red;
+    }
+    .goCheckout {
+      width: 8vw;
+      height: 2vw;
+      border: none;
+      background: $color-black;
+      color: $color-yellow;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .checkout {
+    .backToCart {
+      color: rgba($color-black, 0.8);
+      background: none;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        color: $color-black;
+      }
+    }
+    .input-wrapper {
+      width: 28%;
+      border: 1px solid rgba($color-gray, 0.3);
+      .choose {
+        width: 100%;
+        background-color: rgba($color-gray, 0.3);
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+    .SubscriberWrapper {
+      width: 90%;
+      border: 1px solid rgba($color-gray, 0.3);
+      .info {
+        height: 3vw;
+        background-color: rgba($color-gray, 0.3);
+        font-size: 1.5rem;
+      }
+      .formWrap {
+        #name {
+          width: 100%;
+          height: 2vw;
+          padding-left: 1vw;
+          &:focus {
+            outline: none;
+            border: 1px solid $color-yellow;
+            box-shadow: inset 0 0 0 1px $color-yellow;
+          }
+        }
+        #phone {
+          @extend #name;
+        }
+        #email {
+          @extend #name;
+        }
+        // #code {
+        //   @extend #name;
+        //   width: 10%;
+        // }
+        #address {
+          @extend #name;
+          // width: 90%;
+        }
+        .color-red {
+          color: $color-red;
+        }
+      }
+    }
+    .nextStep {
+      width: 100%;
+      .last {
+        width: 8vw;
+        height: 2vw;
+        border: none;
+        background: $color-black;
+        color: $color-yellow;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .orderDetail {
+    .orderFin {
+      width: 80%;
+      border: 1px solid rgba($color-gray, 0.3);
+      .finish {
+        width: 100%;
+        height: 3vw;
+        background: rgba($color-gray, 0.3);
+        font-size: 1.5rem;
+      }
+      .orderNumber {
+        font-size: 1.5rem;
+      }
+      .orderTime {
+        font-size: 1.5rem;
+      }
+      .detail {
+        .title {
+          font-size: 1.5rem;
+        }
+        .tableTop {
+          width: 30vw;
+          border-bottom: 1px solid rgba($color-gray, 0.3);
+          .picName {
+            width: 20vw;
+          }
+          .bookAmount {
+            width: 5vw;
+            text-align: right;
+          }
+          .bookPrice {
+            width: 10vw;
+            text-align: right;
+          }
+        }
+        .eachDetail {
+          @extend .tableTop;
+        }
+      }
+      .price {
+        font-size: 1.5rem;
+        .color-red {
+          color: $color-red;
+        }
+      }
+    }
+    .toHome {
+      width: 8vw;
+      height: 2vw;
+      border: none;
+      background: $color-black;
+      color: $color-yellow;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

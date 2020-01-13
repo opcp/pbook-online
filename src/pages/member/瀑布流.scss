@@ -1,0 +1,479 @@
+$main_color : #CDE2E0;
+$black: #2D3A3A;
+$yellow: #FFC408;
+$grey: #979D9D;
+$big_text: 32px;
+$title: 28px;
+$content: 24px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contentWrap {
+  height: 80vw;
+  width: 1280px;
+}
+
+.MB_title{
+  margin: 20px;
+  font-size: 32px;
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  width: 1180px;
+  border-bottom: 3px solid $yellow;
+}
+
+.err_border {
+  background-color: #eee;
+  border: 1px solid #FF525B;
+  padding: 12px 15px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.err_text {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  margin:-8px 0 5px 0;
+  padding: 0;
+  color: #FF525B;
+}
+
+
+//查看二手書書籍
+.viewMemberBooks{
+  @extend .contentWrap;
+  .Book_title{
+    @extend .MB_title;
+  }
+}
+
+
+//收藏書籍
+.booksContent{
+  position: absolute;
+  right: 0;
+  left: 320px;
+  height: 100%;
+  // background: #2D3A3A;
+  padding: 31px;
+  color: $yellow;
+  // border: 1px solid #000;
+  box-shadow: inset 0 20px 6rem #2d3a3a, inset 0 20px 6rem #2d3a3a;
+  margin: 0;
+  // width: 85%;
+  transition: 0.5s;
+  
+    &::before {
+      content: "";
+      display: block;
+      background: rgba(0,0,0,.7);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+  } 
+
+  .title{
+      // margin: 20px;
+      // margin-top: 50px;
+      // margin: 80px 0px 20px 40px;
+      // font-size: 32px;
+      // padding-left: 60px;
+      // padding-bottom: 50px;
+      // width: 1280px;
+      // border-bottom: 3px solid $yellow;
+      @extend .MB_title;
+  }
+  .wrap{
+    // border: 1px solid #000;
+    // margin: 10px 20px;
+    width: 100%;
+    column-count: 5;
+    column-width: 18%;
+    column-gap: 5px;
+  }
+  .list{
+    padding-bottom: 10px;
+    margin: 25px 20px 15px 15px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    overflow: hidden;
+    transition: .5s;
+    min-width: 160px;
+    max-width: 200px;
+    //  &:hover{
+    //   //  box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+    //   width: 105%;
+    //   box-shadow: 0px 0px 12px #cde2d0;
+    //  }
+  } 
+
+  .listImg{
+    width: 250px;
+    height: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: middle;
+    &:hover{
+      //  box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+      width: 105%;
+      box-shadow: 0px 0px 12px #cde2d0;
+     }
+  }
+  .bookInfo{
+    padding: 5px 10px;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .booksTitle{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    // text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    &:hover{
+      text-decoration: none;
+      color: #ffc408;
+    }
+  }
+  .introduction{
+    // border: 1px solid #000;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+}
+
+
+
+
+//修改密碼
+.passwordContent{
+  @extend .contentWrap;
+  .title{
+    @extend .MB_title;
+  }
+
+  .tip{
+    // border: 1px solid #000;
+    height: 50px;
+    color: #979D9D;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .error {
+    /* display: block;
+    height: 20px;
+    font-size: 12px; */
+    background-color: #eee;
+    border: 1px solid #FF525B;
+    color: #FF525B;
+    padding: 12px 15px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .serial{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 50px;
+  }
+
+
+  .passwordGroup{
+    // border: 1px solid #000;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+
+    .item{
+      text-align: center;
+      font-size: $big_text;
+      padding: 20px;
+
+    }
+    
+  }
+  button{
+    margin: 35px;
+  }
+
+}
+
+//新增會員書籍
+.addMemberBook{
+
+    .Book_title{
+      margin: 20px;
+      font-size: 32px;
+      margin-top: 50px;
+      padding-left: 60px;
+      padding-bottom: 50px;
+      width: 1400px;
+      border-bottom: 3px solid $yellow;
+    }
+    .button-group{
+      // border: 1px solid #000;
+      margin: 30px 0px 100px 300px;
+      justify-content: flex-start;
+        button{
+            // border: 1px solid red;
+            margin: 20px 100px;
+          }
+
+    }
+
+}
+
+
+//會員編輯的樣式
+.editWrap{
+  @extend .contentWrap;
+  // border: 1px solid rgb(109, 34, 34);
+  
+  .MB_title {
+    // border: 1px solid #000;
+    @extend .MB_title;
+  }
+
+  .list {
+    // border: 1px solid #000;
+    width: 640px;
+    margin-top: 50px;
+    padding-left: 80px;
+
+    .form-group{
+      // border: 1px solid #000;
+      
+      label{
+        // border: 1px solid #000;
+        padding: 20px;
+      }
+    }
+
+    .item {
+      /* background-color: silver; */
+      box-sizing: border-box;
+    }
+
+    h4 {
+      margin: 20px;
+      padding: 20px 10px;
+    }
+    input{
+      // border: 1px solid #000;
+      margin-top: 40px;
+      height:30px;
+      width: 300px;
+   }
+  }
+  .list-r {
+    // border: 1px solid #000;
+    margin-top: 50px;
+
+    .itemTitle{
+      font-size: $big_text;
+      display: flex;
+      justify-content: center;
+      margin: 30px;
+    }
+
+    .item {
+      width: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      /* border: 1px solid #000; */
+
+      .chang_btn{
+        display: flex;
+        justify-content: center;
+      }
+
+      figure{
+        width: 300px;
+        height: 300px;
+        border-radius: 99em;
+        background-size: cover;
+        object-fit: cover;
+      }
+    }
+ 
+    h3 {
+      display: block;
+      width: 200px;
+    }
+  }
+
+  .button-group{
+    // border: 1px solid #000;
+    margin: 80px;
+    justify-content: center;
+    button{
+      margin: 20px 100px;
+    }
+  }
+
+}
+
+
+
+//會員資訊的樣式
+.infoWrap {
+  @extend .contentWrap;
+  // border: 1px solid #000;
+
+  .MB_title {
+    @extend .MB_title;
+  }
+
+  .list {
+    // border: 1px solid #000;
+    width: 640px;
+    margin-top: 50px;
+    padding-left: 80px;
+
+    .item {
+      /* background-color: silver; */
+      box-sizing: border-box;
+    }
+
+    h4 {
+      margin: 20px;
+      padding: 20px 10px;
+    }
+  }
+  .list-r {
+    // border: 1px solid #000;
+    margin-top: 50px;
+
+    .item {
+      height: 100px;
+      // border: 1px solid #000;
+      width: 640px;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      /* border: 1px solid #000; */
+    }
+
+    figure{
+      // border: 1px solid #000;
+      width: 300px;
+      height: 300px;
+      border-radius: 99em;
+      // background-repeat: no-repeat;
+      background-size: cover;
+      // object-fit: cover;
+      
+    }
+    h3 {
+      display: block;
+      width: 200px;
+    }
+  }
+}
+
+//sidebar內樣式
+.side-menu {
+    width: 320px;
+    height: 80vw;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: #CDE2D0;
+    /* opacity: 0.6; */
+    display: flex;
+    flex-direction: column;
+    // box-shadow: 5px 5px 10px #2D3A3A; 
+    text-decoration: none;
+
+  .sidebar {
+    padding-left: 60px;
+  }
+
+  .sidebar_title {
+    // border: 1px solid #000;
+    font-size: 28px;
+    color: $black;
+    text-decoration: none;
+
+    h2 {
+      text-decoration: none !important;
+    }
+  }
+
+  .sidebar_item {
+    padding: 5px 50px;
+    font-size: 24px;
+
+    a {
+      font-size: $title;
+      color: $black;
+    }
+    a:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}
+
+//navbar樣式
+.navbarWrap {
+  height: 80px;
+  background-color: $main_color;
+  // box-shadow: 0px 5px 5px rgba(194, 212, 171, 0.5);
+  font-size: 24px;
+
+  .breadcrumb {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    color: #2d3a3a;
+    padding-left: 250px;
+    background: $main_color;
+
+    li {
+      padding: 0 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2d3a3a;
+    }
+
+    a:hover,
+    li:last-child a {
+      color: $grey;
+    }
+
+    li + li {
+      padding-left: 0;
+    }
+
+    li + li::before {
+      content: '>';
+      color: #2d3a3a;
+      margin-right: 20px;
+    }
+  }
+}

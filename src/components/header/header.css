@@ -1,0 +1,259 @@
+.pointer {
+  cursor: pointer;
+}
+
+.header-img {
+  position: 'relative';
+  width: '100vw';
+}
+
+/* logo */
+.myHeaderLogo {
+  top: 5vw;
+  right: 44vw;
+  min-width: 10%;
+  min-height: 6.5vw;
+  background: url(./images/pbook_logo_black.png) center center no-repeat;
+  background-size: cover;
+}
+
+/* 上方書籤 */
+.cartButton {
+  min-width: 6%;
+  min-height: 7vw;
+  background: #2d3a3a;
+  top: 0;
+  right: 19%;
+  border-radius: 0 0 100px 100px;
+  color: #ffffff;
+}
+
+.loginButton {
+  min-width: 6%;
+  min-height: 7vw;
+  background: #2d3a3a;
+  top: 0;
+  right: 11%;
+  border-radius: 0 0 100px 100px;
+}
+.loginButton:hover {
+  text-decoration: none;
+}
+
+.loginImg {
+  min-width: 60%;
+  min-height: 3.5vw;
+  margin: 5px 0 5px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.loginText {
+  color: #ffffff !important;
+  display: none;
+  font-size: 0.8vw !important;
+  margin: 2px 0 !important;
+}
+
+.loginImg,
+.loginText:hover {
+  color: #ffc408 !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 999.98px) {
+  .cartButton {
+    display: none !important;
+  }
+
+  .loginButton {
+    display: none !important;
+  }
+
+  .myHeaderLogo {
+    top: 5vw;
+    right: 44vw;
+    min-width: 15%;
+    min-height: 10vw;
+    background: url(./images/pbook_logo_black.png) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* 主功能按鈕 */
+.titleZh {
+  font-size: 1.2vw !important;
+  color: #2d3a3a;
+  text-align: center;
+}
+
+.titleZh-white {
+  font-size: 1.2vw !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-align: center;
+  background: none;
+}
+
+.titleEn {
+  font-size: 0.8vw !important;
+  color: #ffc408 !important;
+  text-align: center;
+}
+
+.titleButton {
+  position: absolute !important;
+  top: 16vw !important;
+  right: 32vw !important;
+  text-align: center;
+}
+
+.myHeaderTextCenter:hover {
+  transform: translate3d(1px, 1px, 1px) !important;
+  text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173) !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 999.98px) {
+  .titleButton {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300.98px) {
+  .titleButton {
+    top: 16vw !important;
+    right: 28vw !important;
+  }
+}
+
+/* 手機板的主功能按鈕 */
+@media (min-width: 1000px) {
+  .phoneTitleHide {
+    display: none !important;
+    position: static;
+    z-index: 15;
+  }
+}
+
+@media (max-width: 999.98px) {
+  .myHeaderMenu {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    padding: 0 0 0 2px;
+    background: #2d3a3a;
+    width: 48px;
+    height: 45px;
+    transition: 0.5s;
+    right: 15px;
+    top: 15px;
+    z-index: 15;
+  }
+
+  .myHeaderMenu.active {
+    background: #fff;
+  }
+
+  .myHeaderMenu ul {
+    position: absolute;
+    left: -72px;
+    top: 45px;
+    background: rgba(255, 255, 255, 0.822);
+    width: 120px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .myHeaderMenu.active ul {
+    opacity: 1;
+    max-height: 500px;
+  }
+
+  .myHeaderA {
+    color: #2d3a3a;
+    display: block;
+    padding: 10px 12px;
+  }
+
+  .myHeaderA:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #ffc408;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bar {
+    width: 30px;
+    height: 4px;
+    background: #ffc408;
+    margin: 8px 7px;
+    border-radius: 2px;
+    transition: 0.5s;
+  }
+
+  .active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-9px, 7px);
+  }
+
+  .active .bar2 {
+    opacity: 0;
+  }
+
+  .active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+}
+
+.long {
+  min-height: 15vw;
+}
+
+.show {
+  display: block;
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+.guide-tooltip {
+  display: none;
+}
+
+.guide-content {
+  display: none;
+}
+
+.guide-icon-no {
+  display: none;
+}
+
+.guide-shadow{
+  background: #000;
+}
+
+.guide-shadow:after {
+  font-size: 5vw;
+  position: absolute;
+  content: '您還沒有可以私人聊天的好友喔!\A請去玩玩我們的二手書配對遊戲吧!\A請點擊右上角的「二手書配對」!';
+  white-space: pre-wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #ffff;
+  text-align: center;
+}

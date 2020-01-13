@@ -1,0 +1,312 @@
+/* 模糊吧條 */
+.blurBar{
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    bottom: 77px;
+    background: #fff;
+    z-index: 1;
+    filter: blur(8px);
+}
+/* 按讚、閱讀，區塊控制 */
+.brLikeBox{
+    position: absolute;
+    display: flex;
+    right: 98px;
+    top: 0;
+    margin: 8px 0;
+    min-height: 34px;
+    line-height: 34px;
+}
+/* 按讚、閱讀，間距調整 */
+.brMark_p{
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 0 16px 0 0;
+}
+/* 書櫃簡介，文字 (書評家簡介) */
+.h4_br{
+    text-align: center;
+    font-weight: 800;
+    color: #2d3a3a;
+    margin: 10px 0 20px 0;
+}
+/* 熱門書評標題，底線 */
+.h5_hotText{
+    font-size: 1.5rem;
+    left: 0;
+    right: 0;
+    /* color: #2d3a3a; */
+    color: #ffffff;
+    border-bottom: 2px solid #ffc408;
+    width: 140px;
+    margin: 0 auto;
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+.brHotBookText:hover{
+    text-decoration: none;
+    color:#ffc408;
+}
+/* 熱門書評黑底 */
+.blackBG::before{
+    content:"";
+    display: block;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+/* 熱門書評區域，整體區域 (背景光效) */
+.HotBookBoxAll_Light{
+    box-shadow: inset 0 20px 6rem #2d3a3a , inset 0 20px 6rem #2d3a3a;
+    margin: -30px 0 0 0;
+    transition:0.5s;
+}
+/* 熱門書評區域，整體區域 (區塊控制) */
+.HotBookBoxAll_Bookcase{
+    display: flex;
+    top: 10px;
+    padding: 50px 6px 0 6px;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+}
+/* 熱門書評，多本書 (文字) */
+.brHotBookText{
+    width: 100%;
+    position: absolute;
+    font-size: 0.9rem;
+    color: #ffffff;
+    left: 50%;
+    top: 63%;
+    transform: translateX(-50%);
+}
+/* 熱門書評，多本書區域 (圖片區塊) */
+.HotBookBox_Bookcase{
+    min-width: 110px;
+    max-width: 180px;
+    height: 250px;
+    margin: 0 10px;
+}
+/* 熱門書評，多本書 (圖片) */
+.brHotBookImg_Bookcase{
+    box-shadow: 0px 0px 0px #2d3a3a;
+    width: 100%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50% , -50%);
+    transition: 0.3s;
+}
+.brHotBookImg_Bookcase:hover{
+    width: 105%;
+    box-shadow: 0px 0px 12px #cde2d0;
+}
+/* 頭書，單本書區域 (圖片區) */
+.brAvatarAllBox_Bookcase{
+    border-right:1px solid #2d3a3a;
+    min-width: 143px;
+    max-width: 160px;
+    padding: 0 10px;
+}
+/* 頭書，單本書 (圖片) */
+.brBookInfoImg_Bookcase{
+    box-shadow:2px 2px 2px rgba(45,58,58,0.6),4px 4px 6px rgba(45,58,58,0.4),6px 6px 12px rgba(45,58,58,0.4);
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    transition: 0.5s;
+}
+.brBookInfoImg_Bookcase:hover{
+    box-shadow: 8px 8px 6px #979d9d;
+    width: 105%;
+}
+/* 分頁，看看書櫃 (參照偽元素) */
+.reviewerBooks {
+    /* background: #fff; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background: url(../reviewer_page/images/02_看看書櫃.png) center center; */
+    background-size:cover;
+}
+/* 分頁，看看書櫃 (參照偽元素) */
+.reviewerBooks::after{
+    /* content: ""; */
+    display: block;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+/* 書櫃 #全區域# (縮放限制) */
+.brInfoBox_Bookcase{
+    width: 100%;
+    min-height: 240px;
+    padding: 0 0 56px 0;
+    overflow: hidden;
+}
+/* 書名與作者整區，書名、作者 (間距控制) */
+.bookInfo{
+    padding: 10px 0;
+    border-bottom:1px solid #cde2d0;
+    margin: 10px 0 20px 0;
+}
+/* 書櫃簡介，(書籍內容區塊) */
+.brInfoTextBox_Bookcase{
+    min-height: 240px;
+    max-height: 340px;
+    overflow: hidden;
+    margin: 0 30px 30px 30px;
+}
+/* 書櫃簡介，(顯示內文、限制行數) */
+.brInfoText_Bookcase p{
+    color: #2d3a3a;
+    overflow : hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+/* 書籍內容，書名 (區塊) */
+.bookNameBox_Bookcase{
+    display: flex;
+    line-height: 40px;
+}
+/* 書籍內容，書名 (文字)小) */
+.bookName_Bookcase{
+    min-width: 60px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+/* 書籍內容，書名：變數 (顯示文字) */
+.bookNameText_Bookcase{
+    min-width: 300px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+/* 書籍內容，作者+變數 (文字) */
+.brAuthorText{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.75);
+}
+/* 社群分享，共用區域 (社群圖示區塊) */
+.brIconBox_Bookcase{
+    border-top: 1px solid rgba(45, 58, 58, 0.5);
+    position: absolute;
+    padding: 8px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* 書櫃區，收藏圖示 (區塊設定) */
+.brIconShare_Bookcase{
+    width: 30px;
+    height: 40px;
+    margin: 0 6px 6px 6px;
+}
+/* 書櫃簡介區，看更多，more圖示 (區塊設定) */
+.brIconMore_Bookcase{
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    width: 68px;
+    height: 28px;
+    z-index: 2;
+}
+/* 書櫃簡介區，超連結，hover (動態效果) */
+.brMore_img{
+    width: 68px;
+    left: 15px;
+    transform: translate(-50%);
+    transition: 0.2s;
+}
+.brMore_img:hover{
+    width: 65px;
+    padding: 4px;
+    border:1px solid #ffc408;
+}
+/* 評分組件區塊，區域控制 */
+.brStarBox_Bookcase{    
+    min-width: 150px;
+}
+/* ------------------------------------------------------------------ */
+/* 書櫃列表，整體區域 ( 狀態變更 + 外框陰影 ) */
+.ReviewerListAllBox_Bookcase{
+    display: flex;
+    margin-top: 30px;
+    border: 1px solid #2d3a3a;
+    box-shadow: 1px 6px 6px rgba(45, 58, 58, 0.7);
+    transition: 0.3s;
+}
+.ReviewerListAllBox_Bookcase:nth-child(4){
+    margin-top: 0;
+}
+/* 書籍簡介，狀態預設隱藏 (書名、作者) */
+.bookInfoRWD{
+    display: none;
+    padding: 10px 0 16px 0;
+    margin: 0 30px;
+    border-bottom:1px solid #979d9d;
+}
+@media (max-width: 786px) {
+    .ReviewerListAllBox_Bookcase{
+        display: block;
+        overflow: hidden;
+    }
+    /* 頭書，單本書區域 (圖片區) */
+    .brAvatarAllBox_Bookcase{
+        margin: 28px auto 12px auto;
+        border-right:3px solid transparent;
+        border-bottom:3px solid transparent;
+        height: 140px;
+    }
+    /* 書櫃全區域，高度改變使字數呈現 (RWD) */
+    .brInfoBox_Bookcase {
+        min-height: 150px;
+        overflow: unset;
+    }
+    /* 書櫃簡介，(文字、限制行數) */
+    .brInfoText_Bookcase{
+        margin: 20px 0 0 0;
+        -webkit-line-clamp: 6;
+    }
+    /* 書籍內容，書名(變小) */
+    .bookName_Bookcase{
+        font-size: 1rem;
+        padding: 0 0 6px 0;
+    }
+    /* 書名：{變數} (變小) */
+    .bookNameText_Bookcase{
+        font-size: 1rem;
+        left: -10px;
+    }
+    /* 星評組件，RWD (狀態消失，換位todo..) */
+    .brStarBox_Bookcase{
+        display: none;        
+    }
+    /* 書籍簡介，RWD切換顯示 (書名、作者) */
+    .bookInfo{
+        display: none;
+    }
+    .bookInfoRWD{
+        display: block;
+    }
+    /* 熱門書評區域，整體區域 (區塊控制) */
+    .HotBookBoxAll_Bookcase{
+        padding: 20px 6px 0 6px;
+    }
+    .brHotBookText{
+        top: 120px;
+    }
+    .HotBookBox_Bookcase{
+        margin: 0 8px;
+    }
+}

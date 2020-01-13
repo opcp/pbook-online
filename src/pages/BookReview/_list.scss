@@ -1,0 +1,346 @@
+/*  /list  進入單本書籍後 書評頁面 */
+.reviews_line {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /* 未登入會員橫排  */
+  .reviews_BookRow2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /* 未登入直排右側分數 */
+  .reviews_BookColumnScore2 {
+    display: flex;
+    flex-direction: column;
+  }
+  /* 直排下方會員 */
+  .reviews_BookColumnMember {
+    display: flex;
+    margin: 0 0 0 20px;
+    flex-direction: column;
+  }
+  /* 會員頭像 */
+  .reviews_MemberIcon {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 5px;
+  }
+  /* 頁面外框 */
+  .reviews_Main {
+    margin: 40px auto -45px auto;
+    width: 1200px;
+  }
+  /* 書評發送鈕 */
+  .reviews_submitBtn {
+    width: 110px;
+    height: 30px;
+    margin: 0 0 15px 650px;
+    border-radius: 8px;
+    background-color: #2d3a3a;
+    color: #ffc408;
+    outline: none;
+    border: none;
+  }
+  /* 圖片及資訊外框 */
+  .reviews_Book {
+    display: flex;
+    margin: 5px 0;
+    height: 300px;
+  }
+  /* 書本資訊 */
+  .reviews_bookInfo {
+    margin: 0 0 0 50px;
+    width: 1000px;
+  }
+  /* 作者欄 */
+  .reviews_author {
+    margin: 0 10px;
+  }
+  /* 直排右側分數 */
+  .reviews_BookColumnScore {
+    position: relative;
+    bottom: 140px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  /* 分數條及愛心平行 */
+  .reviews_LineAndScore {
+    display: flex;
+    align-items: center;
+  }
+  /* 分數條及愛心調整 */
+  .reviews_col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -15px 0 0px 0;
+    transform: translate(5px, 5px);
+  }
+  
+  /* 購買按鈕 */
+  .reviews_BookBuy {
+    width: 110px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #cde2d0;
+    color: #2d3a3a;
+    border: 1px solid #ccc;
+    outline: none;
+    position: absolute;
+    right: 160px;
+    bottom: 10px;
+  }
+  .reviews_BookBuy :focus {
+    outline: 0;
+  }
+  /* 推薦書籍文字 */
+  .reviews_recommendText {
+    font-size: 25px;
+    margin: 0 0 0 190px;
+  }
+  /* 書本推薦區 橫排*/
+  .reviews_recommendBook {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 140px;
+  }
+  
+  .reviews_recommendBook_f {
+    width: 125px;
+    height: 125px;
+  }
+  
+  /* 書本推薦區圖片 */
+  .reviews_recommendBook_img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 0 0 0 50px;
+    border: 1px solid #ccc;
+  }
+  /* .reviews_recommendBook_img:hover {
+      width: 125px;
+      height: 125px;
+    } */
+  /* 書本推薦區文字 */
+  .reviews_recommendBookName {
+    margin: 0 0 0 50px;
+    text-align: center;
+    font-size: 13px;
+    width: 120px;
+    word-break: break-all;
+  }
+  /* 書本推薦區Link */
+  .reviews_recommendBook_Link {
+    color: black;
+  }
+  
+  .reviews_recommendBook_Link:hover {
+    color: #ffc408;
+  }
+  
+  /* 書櫃按鈕 */
+  .reviews_BookCase {
+    width: 110px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #2d3a3a;
+    color: #ffc408;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 160px;
+    top: 10px;
+  }
+  .reviews_BookCase:focus {
+    outline: 0;
+  }
+  
+  /* 書評輸入欄 */
+  .reviews_textarea {
+    outline: 0;
+    width: 1000px;
+    min-height: 120px;
+    border: 1.5px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.7rem;
+  }
+  /* 回復評論外框 */
+  .reviews_container {
+    display: flex;
+    width: 1200px;
+    margin: 0 0 3rem 0;
+    border-bottom: 1px dashed #ccc;
+  }
+  
+  /* 表單 */
+  .reviews_form {
+    margin: 40px 0 0 60px;
+  }
+  /* 圖檔img */
+  .reviews_list_img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* 發表評論 */
+  .reviews_push {
+    margin: 0 0 0 50px;
+  }
+  /* 發表評論整排外框 */
+  .reviews_push2 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  
+  /* 會員大頭貼 */
+  .reviews_member_img {
+    border-radius: 50%;
+    max-height: 70%;
+    max-width: 70%;
+    width: 100px;
+    height: 100px;
+    margin: 45px 0 0 50px;
+    object-fit: cover;
+  }
+  /* 會員暱稱 */
+  .reviews_member_nickname {
+    margin: 0 0 0 0px;
+  }
+  
+  /* 未登入會員連結 */
+  .reviews_Login {
+    margin: 50px auto 80px 300px;
+  }
+  /* 下方其他會員書評 */
+  .reviews_text {
+    width: 1000px;
+    height: 50px;
+    margin: 20px auto 35px auto;
+  }
+  /* 下方書評區塊 */
+  .reviews_member_text {
+    margin: 0 auto 0px 70px;
+  }
+  .reviews_member_text2 {
+    margin: 0 auto 15px 70px;
+  }
+  /* 會員右方刪除修改按鈕 */
+  .reviews_member_icon {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    font-size: 20px;
+    margin: 0 0 0 20px;
+  }
+  
+  /* 會員右方取消編輯按鈕 */
+  .reviews_member_icon_times {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    font-size: 20px;
+    margin: 0 0 0 2px;
+  }
+  
+  /* 下方大頭貼 */
+  .reviews_memberReview_img {
+    border-radius: 50%;
+    max-height: 70%;
+    max-width: 70%;
+    width: 100px;
+    height: 100px;
+    margin: 0px 0 0 50px;
+    object-fit: cover;
+  }
+  
+  /* 日期時間 */
+  .reviews_time {
+    opacity: 0.5;
+  }
+  
+  /* 修改評論按鈕 */
+  .reviews_UpdateBtn {
+    width: 110px;
+    height: 30px;
+    margin: 10px 0 0px 855px;
+    border-radius: 8px;
+    background-color: #2d3a3a;
+    color: #ffc408;
+    outline: none;
+    border: none;
+  }
+  /* 書評回覆----------------------------------------------------------------------------------------- */
+  /* 書評回覆顯示欄 */
+  .reviews_reply_view {
+    position: relative;
+    border-top: 1px dashed #ccc;
+    background-color: rgba(204, 204, 204, 0.3);
+    width: 1000px;
+    height: 60px;
+    padding: 4px 8px;
+  }
+  
+  /* 書評回覆輸入欄 */
+  .reviews_reply_text {
+    width: 1000px;
+    height: 35px;
+    margin: 36px 0 10px 0;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    resize: none;
+    outline: 0;
+  }
+  /* 書評回覆修改回覆表單 */
+  .reviews_reply_form {
+    position: absolute;
+    left: 70px;
+    top: 15px;
+  }
+  
+  /* 書評回覆修改回覆輸入欄 */
+  .reviews_reply_editText {
+    width: 800px;
+    height: 25px;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+  }
+  
+  /* 書評回覆輸出欄修改 */
+  .reviews_reply_edit {
+    position: absolute;
+    left: 960px;
+  }
+  
+  /* 書評回覆輸出欄取消修改 */
+  .reviews_reply_cancel {
+    position: absolute;
+    top: 8px;
+    left: 960px;
+  }
+  
+  /* 書評回覆輸出欄刪除 */
+  .reviews_reply_delete {
+    position: absolute;
+    left: 980px;
+  }
+  
+  /* 書評回覆大頭貼 */
+  .reviews_memberReply_img {
+    border-radius: 50%;
+    max-height: 90%;
+    max-width: 25%;
+    width: 50px;
+    height: 50px;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------- */
+  

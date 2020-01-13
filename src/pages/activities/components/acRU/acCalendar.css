@@ -1,0 +1,57 @@
+.acCalendarContainer .popover {
+  color: #2D3A3A;
+  border: 1px solid #bdd9c1;
+  max-width: 480px;
+}
+
+.acCalendarContainer .popover .popover-header {
+  background: #CDE2D0;
+}
+
+.acCalendarContainer .fc-header-toolbar h2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.acCalendarContainer .fc-header-toolbar .fc-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.acCalendarContainer .fc-header-toolbar button {
+  outline: none;
+  background: #8cbd93;
+  border: none;
+}
+
+.acCalendarContainer .fc-header-toolbar button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.acCalendarContainer .fc-header-toolbar button:active {
+  background-color: #416f47 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.acCalendarContainer .fc-event {
+  background-color: #6caa75;
+}
+
+.acCalendarContainer .fc-event .fc-time {
+  display: none;
+}
+
+.acCalendarContainer .fc-event:hover {
+  background-color: #9dc6a2;
+}
+
+.acCalendarContainer .alert-info {
+  background-color: #ddebdf;
+}
+/*# sourceMappingURL=acCalendar.css.map */

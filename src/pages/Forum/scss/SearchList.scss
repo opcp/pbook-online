@@ -1,0 +1,13 @@
+@import './systemcolor';
+.forumPage {
+  .serach-title {
+    @extend %card-title-font;
+    margin: 16px 8px 8px 8px;
+    font-size: 1.8rem;
+    &::before {
+      content: '';
+      border: 3px solid $Darjeeling;
+      margin-right: 8px;
+    }
+  }
+}

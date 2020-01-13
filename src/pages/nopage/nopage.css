@@ -1,0 +1,96 @@
+.myNoPage {
+  width: 100vw;
+  height: 100vh;
+  background: url(images/nopage_bg.png) center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+#noPageGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.noPageGameText {
+  position: absolute;
+  top: -3vw;
+  left: 3vw;
+  background: #0000008f;
+  color: #fff;
+  width: 10vw;
+  height: 10vw;
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 4;
+}
+
+@media (max-width: 460px) {
+  .noPageGameText {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+#noPageGame .noPageGame {
+  background: url(images/nopage-game-useu-bg.png) #fff center center no-repeat;
+  background-size: cover;
+  width: 80vw;
+  height: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#noPageGame .hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+#noPageGame .hole:after {
+  display: block;
+  background: url(images/1058401.png) bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+#noPageGame .hole .mole {
+  cursor: url(images/P_logo.png),auto;
+  background: url(images/mole.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  z-index: 999;
+}
+#noPageGame .hole .mole.up {
+  top: 0;
+}
+
+.noPageButtn {
+  width: 10vw;
+}
+
+.noPageButtn:hover {
+  transform: translate3d(1px, 1px, 1px) !important;
+  text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173) !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 460px) {
+  .noPageButtn {
+    width: 20vw;
+  }
+}

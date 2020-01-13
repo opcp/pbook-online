@@ -1,0 +1,61 @@
+@import '../../color.scss';
+
+.acPageAside {
+  .share {
+    button,
+    a {
+      display: block;
+      color: black;
+      text-align: center;
+      border: none;
+      background: none;
+      border-radius: 5px;
+      flex-grow: 1;
+      svg {
+        font-size: 36px;
+      }
+      &:hover {
+        background: lighten($color-gray, 30%);
+        color: $color-black;
+      }
+    }
+    .like {
+      color: $color-red;
+      svg {
+        transform: scale(.95);
+        path {
+          fill: $color-red;
+          d: path(
+            'M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z'
+          ) !important;
+        }
+      }
+    }
+  }
+  .sign-info {
+    border-top: 1px solid #ccc;
+    flex-wrap: wrap;
+    span {
+      text-align: center;
+      flex-basis: 100%;
+      display: block;
+    }
+    button {
+      border-radius: 4px;
+      background: $color-green;
+      color: $color-black;
+      font-weight: 600;
+      width: 50%;
+      border: none;
+      border: 1px solid transparent;
+      transition: 0.3s;
+      &:hover,
+      &:focus {
+        background: lighten($color-green, 5px);
+        outline: none;
+        box-shadow: none;
+        color: $color-black;
+      }
+    }
+  }
+}

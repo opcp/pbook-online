@@ -1,0 +1,212 @@
+@import 'color';
+
+.detail_wrapper {
+  background-image: url('../../../images/bg.png');
+  // height: 400vh;
+  .bread {
+    .linkTo {
+      color: $color-black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .bookTitle {
+    font-size: 1.5rem;
+  }
+  .marks {
+    border: 1px solid $color-gray;
+    border-radius: 2rem;
+    width: 6vw;
+    height: 2vw;
+    .fav {
+      color: $color-red;
+    }
+  }
+  .bookPrice {
+    background-color: rgba($color-green, 0.3);
+    .discount {
+      color: $color-red;
+    }
+  }
+  .stock {
+    color: $color-red;
+  }
+  .icon {
+    color: $color-black;
+    .svg-inline--fa {
+      font-size: 2rem;
+    }
+  }
+  .introduction {
+    background-color: rgba($color-green, 0.3);
+    color: $color-gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .buyNow {
+    background-color: $color-black;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: $color-white;
+    text-align: left;
+    width: 10vw;
+    height: 2.3vw;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    &:focus {
+      outline: none;
+    }
+    .svg-inline--fa {
+      color: $color-yellow;
+    }
+  }
+  .addCart {
+    @extend .buyNow;
+    .svg-inline--fa {
+      color: $color-green;
+    }
+  }
+  .addFav {
+    @extend .buyNow;
+    padding-left: 2.3rem;
+    .svg-inline--fa {
+      color: $color-red;
+    }
+  }
+  .book_star {
+    width: 10vw;
+    .book_rank {
+      font-size: 2rem;
+    }
+  }
+  .addComment {
+    @extend .buyNow;
+    padding-left: 2.3rem;
+    color: $color-yellow;
+    font-size: 1.5rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .BookProduct {
+    .recommendBooks {
+      border-top: 1px solid $color-gray;
+      text-align: center;
+      .title {
+        font-size: 2rem;
+      }
+      .recommend {
+        width: 10vw;
+        height: 10vw;
+        // overflow: hidden;
+        img {
+          transition: 0.2s;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    border-top: 1px solid $color-gray;
+    .nav-tabs {
+      border-bottom: 1px solid $color-gray;
+      .nav-link {
+        color: $color-gray;
+      }
+      .active {
+        color: $color-red;
+        background-color: transparent;
+        border-color: $color-gray $color-gray $color-white;
+      }
+    }
+    .tab-content {
+      margin-top: 2rem;
+      .active {
+        .wordLevel {
+          font-size: 1.3rem;
+          .word {
+            background-color: $color-black;
+            border: 1px solid transparent;
+            color: $color-white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            &:focus {
+              outline: none;
+            }
+          }
+          // .Mid {
+          //   background-color: $color-red;
+          // }
+        }
+        &.wordBig {
+          span {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 2rem;
+          }
+          .Big {
+            background-color: $color-red;
+          }
+        }
+        &.wordMid {
+          span {
+            font-size: 1rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          .Mid {
+            background-color: $color-red;
+          }
+        }
+        &.wordSml {
+          span {
+            font-size: 0.5rem;
+          }
+          p {
+            font-size: 0.5rem;
+          }
+          .Sml {
+            background-color: $color-red;
+          }
+        }
+      }
+    }
+  }
+  .bookReviews {
+    .title {
+      border-bottom: 1px solid $color-gray;
+      font-size: 1.5rem;
+    }
+    .eachReview {
+      width: 100%;
+      border-bottom: 1px solid $color-gray;
+      .memberImg {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .date {
+        color: $color-gray;
+      }
+      .content {
+        height: 7vw;
+      }
+    }
+  }
+}

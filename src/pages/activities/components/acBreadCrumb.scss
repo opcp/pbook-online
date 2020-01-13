@@ -1,0 +1,16 @@
+@import '../color.scss';
+.activities {
+  .bread {
+    a {
+      color: black;
+    }
+    @media (max-width: $pad-media) {
+      font-size: 0.5rem;
+    }
+
+    @media (max-width: $phone-media) {
+      height: 16px;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,187 @@
+/* 手機RWD */
+@media (max-width: 375px) {
+  .reviews_Main {
+    width: 100%;
+    max-width: 370px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews_list_img {
+    margin: 10px auto;
+  }
+  .reviews_member_icon_times {
+    position: absolute;
+    left: 30px;
+    top: -15px;
+  }
+  .reviews_row2 {
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    margin: -60px 0 0 0;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+  }
+  .reviews_recommendBook {
+    width: 100%;
+    max-width: 260px;
+    margin: 0px auto 0 auto;
+    flex-wrap: wrap;
+  }
+  .reviews_recommendText {
+    margin: 350px 0 0 5px;
+    font-size: 20px;
+  }
+  .reviews_recommendBook_img {
+    margin: 0;
+  }
+  .reviews_recommendBookName {
+    margin: 0;
+  }
+  .reviews_Book {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0px 0;
+  }
+  .reviews_bookInfo {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  .reviews_info {
+    margin: 10px 0;
+  }
+  .reviews_recommendBook_Link {
+    margin: 5px;
+  }
+  .reviews_push {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    display: none;
+  }
+  .reviews_BookColumnScore {
+    display: flex;
+    flex-direction: column;
+    bottom: 100px;
+    margin: 120px 0 0 0;
+  }
+  .reviews_BookBuy {
+    width: 360px;
+    bottom: -165px;
+    right: -18px;
+    border-radius: 15px;
+  }
+  .reviews_BookCase {
+    right: -18px;
+    width: 360px;
+    border-radius: 15px;
+  }
+  .reviews_container {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews_MemberIcon {
+    margin: 0;
+  }
+  .reviews_member_img {
+    margin: 10px 0 0 0;
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .reviews_memberReview_img {
+    margin: 10px 0 0 0;
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .reviews_memberReply_img {
+    margin: 4px 0 0 0;
+    width: 40px;
+    height: 40px;
+  }
+  .reviews_reply_form {
+    left: 60px;
+  }
+  .reviews_reply_text {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto 15px auto;
+  }
+  .reviews_reply_editText {
+    width: 100%;
+    max-width: 150px;
+  }
+  .reviews_UpdateBtn {
+    margin: 0px 0 10px 200px;
+  }
+  .reviews_text {
+    width: 100%;
+    max-width: 370px;
+  }
+  .reviews_author {
+    margin: 0;
+  }
+  .reviews_textarea {
+    outline: 0;
+    width: 100%;
+    max-width: 310px;
+    min-height: 40px;
+    border: 1.5px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    margin: 0 auto;
+  }
+  .reviews_crumb {
+    font-size: 10px;
+  }
+  .reviews_reply_view {
+    width: 100%;
+    max-width: 310px;
+  }
+  .reviews_BookColumnMember {
+    margin: 0;
+  }
+  .reviews_push2 {
+    margin: 0;
+  }
+  .reviews_member_text {
+    margin: -30px 0 0 0;
+  }
+  .reviews_form {
+    margin: -30px 0 0 0;
+  }
+  .reviews_submitBtn {
+    margin: 0 0 0 10px;
+  }
+  .reviews_reply_edit {
+    left: 290px;
+  }
+  .reviews_reply_cancel {
+    left: 290px;
+    top: 20px;
+  }
+  .reviews_reply_delete {
+    left: 290px;
+    top: 35px;
+  }
+  .reviews_BookColumnScore2 {
+    display: none;
+  }
+  .reviews_Login {
+    margin: 0 0 250px 90px;
+    position: relative;
+    top: 220px;
+  }
+  .reviews_goLogin {
+    margin: 0;
+  }
+}

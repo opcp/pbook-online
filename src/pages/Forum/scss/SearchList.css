@@ -1,0 +1,85 @@
+.forumPage .serach-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d3a3a;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.dis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dis-flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dis-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container-m {
+  max-width: 900px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.forumPage .serach-title {
+  margin: 16px 8px 8px 8px;
+  font-size: 1.8rem;
+}
+
+.forumPage .serach-title::before {
+  content: '';
+  border: 3px solid #ff525b;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=SearchList.css.map */

@@ -1,0 +1,122 @@
+.acSign .modal-dialog {
+  position: absolute;
+  top: 75px;
+  right: 50px;
+  bottom: 0;
+  left: 50px;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.acSign .modal-header {
+  background-color: #edf5ee;
+}
+
+.acSign input:focus {
+  border-color: #ddebdf;
+  -webkit-box-shadow: 0 0 0 0.2rem #ddebdf;
+          box-shadow: 0 0 0 0.2rem #ddebdf;
+}
+
+.acSign .modal-footer {
+  border-top: 1px solid #a9bdbd;
+  padding: 1.25rem;
+}
+
+.acSign .modal-footer button.btn-primary {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+  background: #CDE2D0;
+  color: #2D3A3A;
+}
+
+.acSign .modal-footer button.btn-primary:hover {
+  background: #ddebdf;
+}
+
+.acSign .modal-footer button.btn-primary:active, .acSign .modal-footer button.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0.2rem #CDE2D0 !important;
+          box-shadow: 0 0 0.2rem #CDE2D0 !important;
+  border-color: #CDE2D0 !important;
+}
+
+.swal-overlay .swal-icon--error {
+  border-color: #FF525B;
+}
+
+.swal-overlay .swal-icon--error span {
+  background: #FF525B;
+}
+
+.swal-overlay .swal-icon--warning {
+  border-color: #FFC408;
+}
+
+.swal-overlay .swal-icon--warning span {
+  background: #FFC408;
+}
+
+.swal-overlay .swal-modal {
+  border: 5px solid #ddebdf;
+}
+
+.swal-overlay .swal-title {
+  color: #2D3A3A;
+}
+
+.swal-overlay .swal-button--confirm {
+  background: #2D3A3A;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+}
+
+.swal-overlay .swal-button--confirm:hover, .swal-overlay .swal-button--confirm:active {
+  background: #384848;
+  color: #FFC408;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.swal-overlay .swal-button--confirm:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.swal-overlay .swal-button--acDNo, .swal-overlay .swal-button--acDYes {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+  background: #CDE2D0;
+  color: #2D3A3A;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.swal-overlay .swal-button--acDNo:hover, .swal-overlay .swal-button--acDYes:hover {
+  background: #ddebdf;
+}
+
+.swal-overlay .swal-button--acDNo:active, .swal-overlay .swal-button--acDYes:active, .swal-overlay .swal-button--acDNo:focus, .swal-overlay .swal-button--acDYes:focus {
+  -webkit-box-shadow: 0 0 0.2rem #CDE2D0 !important;
+          box-shadow: 0 0 0.2rem #CDE2D0 !important;
+  border-color: #CDE2D0 !important;
+}
+
+.swal-overlay .swal-button--acDYes {
+  background-color: #FF525B;
+}
+
+.swal-overlay .swal-button--acDYes:active, .swal-overlay .swal-button--acDYes:focus {
+  -webkit-box-shadow: 0 0 0.2rem #FF525B !important;
+          box-shadow: 0 0 0.2rem #FF525B !important;
+  border-color: #FF525B !important;
+}
+
+.swal-overlay .swal-button--acDYes:hover {
+  background: #ff6c73;
+}
+/*# sourceMappingURL=acSign.css.map */

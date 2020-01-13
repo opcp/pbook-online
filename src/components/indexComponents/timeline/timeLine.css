@@ -1,0 +1,51 @@
+.timeline-p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  font-size: 20px;
+}
+
+.timeline-more {
+  text-align: right;
+  z-index: 5;
+  font-size: 20px;
+}
+
+.timeline-more a{
+  color: black;
+}
+
+.timeline-more:hover span {
+  text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+}
+
+@media (max-width: 999.98px) {
+  .timeLine20 {
+    font-size: 20px !important;
+  }
+
+  .timeLine16 {
+    font-size: 16px !important;
+  }
+
+  .timeline-p {
+    font-size: 16px;
+  }
+}
+
+/* 鶴 */
+.crane {
+  position: absolute;
+  top: 10rem;
+  right: 10vw;
+  min-width: 10%;
+  min-height: 6.5vw;
+  background: url(./images/bird.png) center center no-repeat;
+  background-size: cover;
+}
+
+.buttons{
+  position: static;
+}

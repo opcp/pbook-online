@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.acList {
+  /* 自動隱藏超過行數的內容 */
+}
+
+.acList .tagContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.acList .tagContainer p {
+  margin: 0 1rem;
+  line-height: 40px;
+}
+
+.acList h4 {
+  font-size: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.acList .eventList {
+  border-top: 1px solid #ccc;
+}
+
+.acList .acItem a {
+  display: block;
+}
+
+.acList .acImg a {
+  height: 150px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.acList .acIntro {
+  max-height: 48px;
+}
+
+.acList .ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  /* 行數 */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+/*# sourceMappingURL=acList.css.map */

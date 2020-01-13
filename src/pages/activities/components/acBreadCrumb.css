@@ -1,0 +1,17 @@
+.activities .bread a {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .activities .bread {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .activities .bread {
+    height: 16px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=acBreadCrumb.css.map */

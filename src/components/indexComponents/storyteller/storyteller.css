@@ -1,0 +1,42 @@
+.storyteller-body {
+  background-image: url('./images/big_storyteller.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  width: 100%;
+  /* position: relative; */
+}
+
+.storyteller-wrap {
+  padding-top:6vw;
+}
+
+.storyteller-wrap .brInfoBox {
+  background: #2d3a3a8e;
+}
+
+.storyteller-wrap .brInfoText {
+  color: #fff;
+}
+
+.storyteller-wrap .h5_br {
+  color: #fff;
+}
+
+.storyteller-wrap .brAvatarAllBox {
+  background: #2d3a3a65;
+}
+
+.storyteller-wrap .AvatarInfo{
+  color:#fff;
+}
+
+.storyteller-wrap .brReadBooks{
+  color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .storyteller-body {
+    background-image: url('./images/small_storyteller.png') !important;
+  }
+}

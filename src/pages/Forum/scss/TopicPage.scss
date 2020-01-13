@@ -1,0 +1,19 @@
+@import './systemcolor';
+.forumPage {
+  $Darjeeling: #ff525b;
+
+  .HotArticlePage {
+    .subCate-navbar {
+      display: flex;
+      padding: 12px 16px;
+      justify-content: space-between;
+      .subBar-item {
+        margin: auto 4px;
+        height: 40px;
+      }
+    }
+    .cards-wrapper .card-figure {
+      margin-bottom: 32px;
+    }
+  }
+}

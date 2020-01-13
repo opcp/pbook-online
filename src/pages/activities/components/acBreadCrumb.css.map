@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAEI,WAFO,CACT,MAAM,CACJ,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;CACb;;AACD,MAAM,EAAE,SAAS,EAAE,KAAK;EAL5B,AACE,WADS,CACT,MAAM,CAAC;IAKH,SAAS,EAAE,MAAM;GAOpB;;;AAJC,MAAM,EAAE,SAAS,EAAE,KAAK;EAT5B,AACE,WADS,CACT,MAAM,CAAC;IASH,MAAM,EAAE,IAAI;IACZ,SAAS,EAAE,IAAI;GAElB",
+    "sources": [
+        "acBreadCrumb.scss",
+        "../color.scss"
+    ],
+    "names": [],
+    "file": "acBreadCrumb.css"
+}

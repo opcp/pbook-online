@@ -1,0 +1,516 @@
+.pointer {
+  cursor: pointer;
+}
+
+.changeGameIndexBG {
+  width: 100%;
+  height: 100vh;
+  background: url(images/changeGameIndexBG.png) center center no-repeat;
+  background-size: cover;
+}
+
+/* -------------背景音樂按鈕------------- */
+.myBGsoundBTN {
+  width: 30px;
+  height: 30px;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  position: fixed;
+}
+/* -------------背景音樂按鈕------------- */
+
+/* -------------背景遊戲規則按鈕------------- */
+.GameRuleAlwaysBTN {
+  width: 30px;
+  height: 30px;
+  bottom: 20px;
+  right: 55px;
+  cursor: pointer;
+  position: fixed;
+}
+/* -------------背景遊戲規則按鈕------------- */
+
+/* ----------遊戲規則------------- */
+.gameRuleTitle {
+  font-size: 3.5vw;
+}
+.gameRuleText {
+  font-size: 2.5vw;
+}
+.gameRuleButtonWrap {
+  position: fixed;
+  left: calc(50% - 100px);
+  top: 80%;
+  cursor: pointer;
+}
+.gameRuleButtonWrap:hover {
+  transform: translate3d(1px, 1px, 1px);
+  text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+}
+.gameRuleButtonWrap img {
+  width: 200px;
+}
+
+@media (max-width: 575.98px) {
+  .gameRuleTitle {
+    font-size: 32px;
+  }
+  .gameRuleText {
+    font-size: 24px;
+  }
+}
+/* ----------遊戲規則------------- */
+
+/* ----------倒數計時器------------- */
+.countDownText,
+.countDownText > span {
+  text-align: left;
+  font-size: 1.5vw;
+  margin: 1vw 0;
+}
+@media (max-width: 575.98px) {
+  .countDownText,
+  .countDownText > span {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+/* ----------倒數計時器------------- */
+
+/* --------------遊戲首頁------------------ */
+@media (min-width: 576px) {
+  .PC-changeGameWrap {
+    width: 85vw;
+    height: 45vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .PC-changeGameIndexContext {
+    width: 100%;
+    height: 100%;
+  }
+  .PC-changeGameBtnWrap {
+    width: 12vw;
+    bottom: 8vw;
+    left: 6vw;
+  }
+  .PC-changeGameBtnWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .PC-changeGameBtnWrap img:hover {
+    transform: translate3d(1px, 1px, 1px);
+    text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+  }
+
+  .PHONE-changeGameIndexContext {
+    display: none;
+  }
+  .PHONE-changeGameBtnWrap {
+    display: none;
+  }
+  .PHONE-changeGameBtnWrap img {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .PC-changeGameWrap {
+    display: none;
+  }
+  .PC-changeGameIndexContext {
+    display: none;
+  }
+  .PC-changeGameBtnWrap {
+    display: none;
+  }
+  .PC-changeGameBtnWrap img {
+    display: none;
+  }
+
+  .PHONE-changeGameIndexContext {
+    width: 100vw;
+    height: 80vh;
+  }
+  .PHONE-changeGameBtnWrap {
+    width: 30vw;
+    left: 35vw;
+  }
+  .PHONE-changeGameBtnWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .PHONE-changeGameBtnWrap img:hover {
+    transform: translate3d(1px, 1px, 1px);
+    text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+  }
+}
+/* --------------遊戲首頁------------------ */
+
+/* -------------書籍列表-------------- */
+@media (min-width: 576px) {
+  .PC-changeGameBookListWrap {
+    width: 100vw;
+    height: 48vw;
+    top: 48.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .PC-changeGameBookListContext {
+    width: 100%;
+    height: 100%;
+  }
+  .PC-changeGameBookListTableWrap {
+    top: 11vw;
+    left: 25vw;
+    width: 65%;
+    height: 33vw;
+    position: relative;
+  }
+  .PC-changeGameBookListTable {
+    width: 100%;
+    height: 20vw;
+    overflow: auto;
+  }
+  .PC-changeGameBookListTable table,
+  .PC-changeGameBookListTable td,
+  .PC-changeGameBookListTable th,
+  .PC-changeGameBookListTable tr {
+    font-size: 1.5vw;
+    text-align: center;
+    border: 2px solid black !important;
+  }
+  .PC-changeGameBookListBookStatus {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+  .PC-changeGameBookListBookStatus:hover:after {
+    font-size: 1vw;
+    cursor: pointer;
+    position: absolute;
+    content: '(A)良好：有使用痕跡，不如新書潔白、小範圍瑕疵，如摺角、碰撞、汙點或泛黃等。\A(B)尚可：有使用痕跡，並因時間因素，有大範圍黃、黑斑及瑕疵。\A(C)欠佳：印刷褪色、模糊或其它更糟之書況。';
+    white-space: pre-wrap;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 0.5vw;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.705);
+    padding: 5px;
+    text-align: left;
+  }
+  .PC-changeGameBookListShow {
+    font-size: 1.5vw;
+    margin: 0 auto;
+    color: #cc2929;
+  }
+  .PC-changeGameBookListShow:hover {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .PC-changeGameBookListBtnWrap {
+    width: 12vw;
+    bottom: 1.5vw;
+    right: 0px;
+    position: absolute;
+  }
+  .PC-changeGameBookListBtnWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .PC-changeGameBookListBtnWrap img:hover {
+    transform: translate3d(1px, 1px, 1px);
+    text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+  }
+
+  .PHONE-changeGameBookListWrap {
+    display: none;
+  }
+  .PHONE-changeGameBookListContext {
+    display: none;
+  }
+  .PHONE-changeGameBookListShow {
+    display: none;
+  }
+  .PHONE-changeGameBookListShow:hover {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .PC-changeGameBookListWrap {
+    display: none;
+  }
+  .PC-changeGameBookListContext {
+    display: none;
+  }
+  .PC-changeGameBookListTableWrap {
+    display: none;
+  }
+  .PC-changeGameBookListTable {
+    display: none;
+  }
+  .PC-changeGameBookListTable table,
+  .PC-changeGameBookListTable td,
+  .PC-changeGameBookListTable th,
+  .PC-changeGameBookListTable tr {
+    display: none;
+  }
+  .PC-changeGameBookListBookStatus {
+    display: none;
+  }
+  .PC-changeGameBookListBookStatus:hover:after {
+    display: none;
+  }
+  .PC-changeGameBookListShow {
+    display: none;
+  }
+  .PC-changeGameBookListShow:hover {
+    display: none;
+  }
+  .PC-changeGameBookListBtnWrap {
+    display: none;
+  }
+  .PC-changeGameBookListBtnWrap img {
+    display: none;
+  }
+  .PC-changeGameBookListBtnWrap img:hover {
+    display: none;
+  }
+
+  .PHONE-changeGameBookListContext {
+    width: 100vw;
+    height: 20vh;
+  }
+  .PHONE-changeGameBookListImg {
+    border-radius: 0.25rem;
+    max-width: 50%;
+    max-width: 40%;
+    object-fit: contain;
+    height: auto;
+    margin: 0 auto;
+  }
+  .PHONE-changeGameBookListBtnWrap {
+    width: 30%;
+    margin: 8vw auto 0 auto;
+  }
+  .PHONE-changeGameBookListBtnWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .PHONE-changeGameBookListBtnWrap img:hover {
+    transform: translate3d(1px, 1px, 1px);
+    text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+  }
+  .PHONE-changeGameBookListShow {
+    display: inline;
+  }
+  .PHONE-changeGameBookListShow:hover {
+    color: #cc2929;
+    cursor: pointer;
+  }
+
+  .slick-arrow.slick-next {
+    display: none !important;
+  }
+}
+/* -------------書籍列表-------------- */
+
+/* -------------配對狀態列表------------------ */
+@media (min-width: 576px) {
+  .PC-changeGameWaitWrap {
+    width: 100vw;
+    height: 48vw;
+    top: 48.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .PC-changeGameWaitContext {
+    width: 100%;
+    height: 100%;
+  }
+  .PC-changeGameWaitContextWrap {
+    top: 9vw;
+    left: 25vw;
+    width: 65%;
+    height: 35vw;
+    position: relative;
+  }
+  .PC-nav-link.nav.nav-tabs {
+    border-bottom: 1px solid transparent;
+    font-size: 1.5vw;
+  }
+  .PC-nav-link a {
+    color: #979d9d;
+    font-size: 1.5vw;
+  }
+  .PC-nav-link .nav-link.active {
+    color: black;
+    background-color: transparent;
+    border-color: black black transparent;
+    font-size: 1.5vw;
+  }
+  .PC-changeGameWaitTable table,
+  .PC-changeGameWaitTable td,
+  .PC-changeGameWaitTable th,
+  .PC-changeGameWaitTable tr {
+    font-size: 1vw;
+    text-align: center;
+    border: 2px solid black !important;
+  }
+  .PC-changeGameWaitTableWrap {
+    margin-top: 1vw;
+    width: 100%;
+    height: 20vw;
+    overflow: auto;
+  }
+  .PC-changeGameWaitBtnWrap {
+    width: 12vw;
+    bottom: 1.5vw;
+    right: 0px;
+    position: absolute;
+  }
+  .PC-changeGameWaitBtnWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .PC-changeGameWaitBtnWrap img:hover {
+    transform: translate3d(1px, 1px, 1px);
+    text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .PC-changeGameWaitWrap {
+    display: none;
+  }
+  .PC-changeGameWaitContext {
+    display: none;
+  }
+  .PC-changeGameWaitContextWrap {
+    display: none;
+  }
+  .PC-nav-link.nav.nav-tabs {
+    display: none;
+  }
+  .PC-nav-link a {
+    display: none;
+  }
+  .PC-nav-link .nav-link.active {
+    display: none;
+  }
+  .PC-changeGameWaitTable table,
+  .PC-changeGameWaitTable td,
+  .PC-changeGameWaitTable th,
+  .PC-changeGameWaitTable tr {
+    display: none;
+  }
+  .PC-changeGameWaitTableWrap {
+    display: none;
+  }
+  .PC-changeGameWaitBtnWrap {
+    display: none;
+  }
+  .PC-changeGameWaitBtnWrap img {
+    display: none;
+  }
+  .PC-changeGameWaitBtnWrap img:hover {
+    display: none;
+  }
+
+  .PHONE-changeGameWaitContext {
+    width: 100vw;
+    height: 20vh;
+  }
+  .PHONE-nav-link .nav-pills .nav-link.active {
+    border-bottom: 1px solid transparent;
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+  .PHONE-nav-link .nav-pills .nav-link {
+    color: #979d9d;
+  }
+  .PHONE-table .tr {
+    display: block;
+    border: #ddd 1px solid;
+    margin-bottom: 5px;
+  }
+  .PHONE-table .tr li {
+    display: inline-block;
+    width: 100%;
+    border: none;
+  }
+  .PHONE-table .tr li:before {
+    content: attr(data-title);
+    display: inline-block;
+    width: auto;
+    min-width: 27%;
+    font-weight: 900;
+    padding-right: 1rem;
+  }
+  .PHONE-falseButtton{
+    cursor: pointer;
+    font-size: 8px;
+    padding: 3px;
+    margin-right: 10px;
+  }
+
+  .PHONE-changeGameWaitBtnWrap {
+    width: 30%;
+    margin: 8vw auto 0 auto;
+  }
+  .PHONE-changeGameWaitBtnWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .PHONE-changeGameWaitBtnWrap img:hover {
+    transform: translate3d(1px, 1px, 1px);
+    text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+  }
+}
+
+/* -------------配對狀態列表------------------ */
+
+/* -------------------------雪花飄落效果----------------------- */
+#snow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./images/snow1.png');
+  -webkit-animation: snow 15s linear infinite;
+  animation: snow 15s linear infinite;
+}
+@keyframes snow {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 500px 1000px, 500px 500px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 500px 1000px, 500px 500px;
+  }
+}
+/* -------------------------雪花飄落效果----------------------- */

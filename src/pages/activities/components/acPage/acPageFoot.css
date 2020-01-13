@@ -1,0 +1,90 @@
+.acPageFoot {
+  border-top: 1px solid #ccc;
+}
+
+.acPageFoot .prevAc:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+.acPageFoot .prevAc,
+.acPageFoot .nextAc {
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.acPageFoot .prevAc button,
+.acPageFoot .nextAc button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: none;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.acPageFoot .prevAc button:focus,
+.acPageFoot .nextAc button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.acPageFoot .prevAc button span,
+.acPageFoot .nextAc button span {
+  font-size: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.acPageFoot .prevAc a,
+.acPageFoot .nextAc a {
+  display: block;
+  height: 150px;
+}
+
+.acPageFoot .prevAc a img,
+.acPageFoot .nextAc a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.acPageFoot .prevAc a:after,
+.acPageFoot .nextAc a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2D3A3A;
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.acPageFoot .prevAc:hover button,
+.acPageFoot .nextAc:hover button {
+  color: #5a7373;
+}
+
+.acPageFoot .prevAc:hover a:after,
+.acPageFoot .nextAc:hover a:after {
+  opacity: 0;
+}
+/*# sourceMappingURL=acPageFoot.css.map */

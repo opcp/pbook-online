@@ -1,0 +1,19 @@
+.forumPage {
+  margin-bottom: 30px;
+  background: url("../../../images/bg.png");
+}
+
+.forumPage .navbarControl {
+  background-color: #cde2d0;
+}
+
+.forumPage .navbarControl .F-nav-link {
+  line-height: 33px;
+}
+
+.forumPage .navbarControl .F-nav-link.active {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffc408;
+}
+/*# sourceMappingURL=ForumNavBar.css.map */
